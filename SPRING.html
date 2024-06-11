@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPRING</title>
+    <link rel="stylesheet" href="./SPRING.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <nav class="navbar">
+     <div class="collection">
+        <div>
+            <img class="spring" src="data:image/png;base64,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" alt="">
+            <small class="subtext">
+                by VMware Tanzu
+            </small>
+        </div>
+        <ul class="list">
+           <div class="toplist">
+            <li class="text">Why spring</li>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+                <div class="dropd">
+                    <ul class="drop">
+                        <li class="down">Overview</li>
+                        <li class="down">Microservice</li>
+                        <li class="down">Reactive</li>
+                        <li class="down">Event Driven</li>
+                        <li class="down">Cloud</li>
+                        <li class="down">Web Application</li>
+                        <li class="down">Serverless</li>
+                        <li class="down">Batch</li>
+                    </ul>
+                </div>
+           </div>
+           <div class="toplist">
+            <li class="text">Learn</li>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+                <div class="dropd">
+                    <ul class="drop">
+                        <li class="down">Overview</li>
+                        <li class="down">Microservice</li>
+                        <li class="down">Reactive</li>
+                        <li class="down">Event Driven</li>
+                        <li class="down">Cloud</li>
+                        <li class="down">Web Application</li>
+                        <li class="down">Serverless</li>
+                        <li class="down">Batch</li>
+                    </ul>
+                </div>
+           </div>
+           <div class="toplist">
+            <li class="text">Project</li>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+                <div class="dropd">
+                    <ul class="drop">
+                        <li class="down">Overview</li>
+                        <li class="down">Microservice</li>
+                        <li class="down">Reactive</li>
+                        <li class="down">Event Driven</li>
+                        <li class="down">Cloud</li>
+                        <li class="down">Web Application</li>
+                        <li class="down">Serverless</li>
+                        <li class="down">Batch</li>
+                    </ul>
+                </div>
+           </div>
+           <div class="toplist">
+            <li class="text">Academy</li>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>\
+                <div class="dropd">
+                    <ul class="drop">
+                        <li class="down">Overview</li>
+                        <li class="down">Microservice</li>
+                        <li class="down">Reactive</li>
+                        <li class="down">Event Driven</li>
+                        <li class="down">Cloud</li>
+                        <li class="down">Web Application</li>
+                        <li class="down">Serverless</li>
+                        <li class="down">Batch</li>
+                    </ul>
+                </div>
+           </div>
+           <div class="toplist">
+            <li class="text">Solutions</li>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+                <div class="dropd">
+                    <ul class="drop">
+                        <li class="down">Overview</li>
+                        <li class="down">Microservice</li>
+                        <li class="down">Reactive</li>
+                        <li class="down">Event Driven</li>
+                        <li class="down">Cloud</li>
+                        <li class="down">Web Application</li>
+                        <li class="down">Serverless</li>
+                        <li class="down">Batch</li>
+                    </ul>
+                </div>
+           </div>
+           <div class="toplist">
+            <li class="text">Community</li>
+            <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+                <div class="dropd">
+                    <ul class="drop">
+                        <li class="down">Overview</li>
+                        <li class="down">Microservice</li>
+                        <li class="down">Reactive</li>
+                        <li class="down">Event Driven</li>
+                        <li class="down">Cloud</li>
+                        <li class="down">Web Application</li>
+                        <li class="down">Serverless</li>
+                        <li class="down">Batch</li>
+                    </ul>
+                </div>
+           </div>
+           <img class="bright" src="../../../Downloads/images-removebg-preview (9).png" alt="">
+        </ul>
+     </div>
+    </nav>
+    <section class="firsts">
+        <div class="first">
+            <div class="imgcollect">
+                <img class="img1" src="../../../Downloads/images-removebg-preview (11).png" alt="">
+                <img class="img2" src="../../../Downloads/download-removebg-preview (66).png" alt="">
+            </div> 
+            <h1 class="firsttext">Spring Makes Java</h1>
+            <h1 class="secondtext">Simple</h1>
+            <div class="parbtn">
+                <button class="btn">WHY SPRING</button>
+                <button class="btn">QUICKSTART.</button>
+            </div>
+            <div class="bodied">
+                <button class="btn2">New</button>
+                <p>|</p>
+                <P class="dive">State Of Spring Result 2024</P>
+            </div>
+        </div>
+    </section>
+    <section class="second">
+        <h1 class="heading">What Spring Can Do</h1>
+       <div class="father">
+        <div class="container1">
+            <img src="../../../Downloads/microservices.svg" alt="" class="img3">
+            <h2>Microservices</h2>
+           <div class="fit">
+            <p>Quickly deliver production‑grade features with independently evolvable microservices.</p>
+           </div>
+        </div>
+        <div class="container1">
+            <img src="../../../Downloads/microservices.svg" alt="" class="img3">
+            <h2>Microservices</h2>
+           <div class="fit">
+            <p>Quickly deliver production‑grade features with independently evolvable microservices.</p>
+           </div>
+        </div>
+        <div class="container1">
+            <img src="../../../Downloads/microservices.svg" alt="" class="img3">
+            <h2>Microservices</h2>
+           <div class="fit">
+            <p>Quickly deliver production‑grade features with independently evolvable microservices.</p>
+           </div>
+        </div>
+        <div class="container1">
+            <img src="../../../Downloads/microservices.svg" alt="" class="img3">
+            <h2>Microservices</h2>
+           <div class="fit">
+            <p>Quickly deliver production‑grade features with independently evolvable microservices.</p>
+           </div>
+        </div>
+        <div class="container1">
+            <img src="../../../Downloads/microservices.svg" alt="" class="img3">
+            <h2>Microservices</h2>
+           <div class="fit">
+            <p>Quickly deliver production‑grade features with independently evolvable microservices.</p>
+           </div>
+        </div>
+        <div class="container1">
+            <img src="../../../Downloads/microservices.svg" alt="" class="img3">
+            <h2>Microservices</h2>
+           <div class="fit">
+            <p>Quickly deliver production‑grade features with independently evolvable microservices.</p>
+           </div>
+        </div>
+        <div class="sticky">
+            <img class="stick" src="../../../Downloads/brcm_persistent_cookie_icon_blue (1).png" alt="">
+        </div>
+       </div>
+    </section>
+    <section class="third">
+       <div class="parfec">
+        <video class="video" src="../../../Documents/1717440185621.mp4" autoplay loop></video>
+            <div class="parsec">
+                <h1 class="header">Level up your Java™ code</h1>
+                <p class="smaller">With Spring Boot in your app, just a few lines of code is all you need to start building services like a boss.
+
+                    New to Spring? Try our simple quickstart guide.</p>
+            </div>
+       </div>
+    </section>
+    <section class="fourth">
+        <div>
+            <img src="../../../Downloads/quote.svg" alt="" class="quote">
+        </div>
+        <div class="quotes">
+            <p class="quo">Most [of our] services today are all based on Spring Boot. I think the most important thing is that [Spring] has just been very well maintained over the years...that is important for us for the long term because we don’t want to be switching to a new framework every two years.</p>
+        </div>
+        <div class="bnane">
+            <img src="../../../Downloads/bakker-120.jpg" alt="" class="paul">
+            <P>Paul Bakker, Senior Software Engineer, Netflix</P>
+        </div>
+        <div class="watch">
+            <P>Watch now</P>
+        </div>
+    </section>
+    <section class="fifth">
+      <div class="flex">
+        <div class="circle">
+            <img class="cicles" src="../../../Downloads/download-removebg-preview (68).png" alt="" class="cicles">
+        </div>
+       <div class="mother">
+        <div class="content1">
+            <h1 class="get">Get Ahead</h1>
+            <P>VMware offers training and certification to turbo-charge your progress.</P>
+            <div class="watchx">
+                <P>Watch now</P>
+            </div>
+        </div>
+        <div class="content2">
+            <h1 class="get">Get Ahead</h1>
+            <P>VMware offers training and certification to turbo-charge your progress.</P>
+            <div class="watchx">
+                <P>Watch now</P>
+            </div>
+        </div>
+        <div class="content3">
+            <h1 class="get">Get Ahead</h1>
+            <P>VMware offers training and certification to turbo-charge your progress.</P>
+            <div class="watchx">
+                <P>Watch now</P>
+            </div>
+        </div>
+       </div>
+      </div>
+    </section>
+    <section class="sixth">
+       <div class="butflex">
+        <div lexlist>
+            <ul class="butlist">
+                <li><b>Why Spring</b></li>
+                <li>Microservices</li>
+                <li>Reactive</li>
+                <li>Event Driven</li>
+                <li>Cloud</li>
+                <li>Web Applications</li>
+               <li> Serverless</li>
+                <li>Batch</li>
+               <li> Learn</li>
+                <li>Quickstart</li>
+                <li>Guides</li>
+                <li>Blog</li>
+                <li>Community</li>
+                
+            </ul>
+        </div>
+        <div lexlist>
+            <ul class="butlist">
+                <li><b>Why Spring</b></li>
+                <li>Microservices</li>
+                <li>Reactive</li>
+                <li>Event Driven</li>
+                <li>Cloud</li>
+                <li>Web Applications</li>
+               <li> Serverless</li>
+                <li>Batch</li>
+               <li> Learn</li>
+                <li>Quickstart</li>
+                <li>Guides</li>
+                <li>Blog</li>
+                <li>Community</li>
+                
+            </ul>
+        </div>
+        <div lexlist>
+            <ul class="butlist">
+                <li><b>Why Spring</b></li>
+                <li>Microservices</li>
+                <li>Reactive</li>
+                <li>Event Driven</li>
+                <li>Cloud</li>
+                <li>Web Applications</li>
+               <li> Serverless</li>
+                <li>Batch</li>
+               <li> Learn</li>
+                <li>Quickstart</li>
+                <li>Guides</li>
+                <li>Blog</li>
+                <li>Community</li>
+                
+            </ul>
+        </div>
+        <div lexlist>
+            <ul class="butlist">
+                <li><b>Why Spring</b></li>
+                <li>Microservices</li>
+                <li>Reactive</li>
+                <li>Event Driven</li>
+                <li>Cloud</li>
+                <li>Web Applications</li>
+               <li> Serverless</li>
+                <li>Batch</li>
+               <li> Learn</li>
+                <li>Quickstart</li>
+                <li>Guides</li>
+                <li>Blog</li>
+                <li>Community</li>
+                
+            </ul>
+        </div>
+        <div lexlist>
+            <ul class="butlist">
+                <li><b>Why Spring</b></li>
+                <li>Microservices</li>
+                <li>Reactive</li>
+                <li>Event Driven</li>
+                <li>Cloud</li>
+                <li>Web Applications</li>
+               <li> Serverless</li>
+                <li>Batch</li>
+               <li> Learn</li>
+                <li>Quickstart</li>
+                <li>Guides</li>
+                <li>Blog</li>
+                <li>Community</li>
+                
+            </ul>
+        </div>
+       </div>
+    </section>
+    <section class="seventh">
+        <div>
+            <div>
+                <img class="spring" src="data:image/png;base64,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" alt="">
+                <small class="subtext">
+                    by VMware Tanzu
+                </small>
+            </div>
+            <div>
+                <img src="" alt="" class="xar">
+            </div>
+            <p>Copyright © 2005 - 2024 Broadcom. All Rights Reserved. The term "Broadcom" refers to Broadcom Inc. and/or its subsidiaries.</p>
+            <div class="sat">
+                <span>Terms of use</span>
+                <ul class="buy">
+                    <li class="fat">privacy</li>
+                    <li class="fac">Trade Mark Guidelines</li>
+                    <li class="fax">your california privacy rights</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <p>Apache®, Apache Tomcat®, Apache Kafka®, Apache Cassandra™, and Apache Geode™ are trademarks or registered trademarks of the Apache Software Foundation in the United States and/or other countries. Java™, Java™ SE, Java™ EE, and OpenJDK™ are trademarks of Oracle and/or its affiliates. Kubernetes® is a registered trademark of the Linux Foundation in the United States and other countries. Linux® is the registered trademark of Linus Torvalds in the United States and other countries. Windows® and Microsoft® Azure are registered trademarks of Microsoft Corporation. “AWS” and “Amazon Web Services” are trademarks or registered trademarks of Amazon.com Inc. or its affiliates. All other trademarks and copyrights are property of their respective owners and are only mentioned for informative purposes. Other names may be trademarks of their respective owners.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
